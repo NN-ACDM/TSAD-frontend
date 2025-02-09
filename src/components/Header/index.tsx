@@ -48,7 +48,7 @@ const Header = () => {
       <header
         className={`ud-header left-0 top-0 z-40 flex w-full items-center ${
           sticky
-            ? "shadow-nav fixed z-[999] border-b border-stroke bg-white/80 backdrop-blur-[5px] dark:border-dark-3/20 dark:bg-dark/10"
+            ? "shadow-nav fixed z-[999] border-b border-stroke bg-white/80 backdrop-blur-[10px] dark:border-dark-3/20 dark:bg-dark/10"
             : "absolute bg-transparent"
         }`}
       >
@@ -58,7 +58,7 @@ const Header = () => {
               <Link
                 href="/"
                 className={`navbar-logo block w-full ${
-                  sticky ? "py-2" : "py-5"
+                  sticky ? "py-2" : "py-2"
                 } `}
               >
                 {pathUrl !== "/" ? (
@@ -235,7 +235,7 @@ const Header = () => {
 
                           <div
                             className={`submenu relative left-0 top-full w-[250px] rounded-sm bg-white p-4 transition-[top] duration-300 group-hover:opacity-100 dark:bg-dark-2 lg:invisible lg:absolute lg:top-[110%] lg:block lg:opacity-0 lg:shadow-lg lg:group-hover:visible lg:group-hover:top-full ${
-                              openIndex === index ? "!-left-[25px]" : "hidden"
+                              openIndex === index ? "" : "hidden"
                             }`}
                           >
                             {menuItem?.submenu?.map((submenuItem: any, i) => (
